@@ -2,7 +2,7 @@
 
 A filesystem is a hierarchy of directories that is used to organize files on a storage media. A Stratis filesystem is created from one pool. Like pools, all filesystems must have a name; we will name our filesystem my_first_fs.
 
-Let's create my_fs from the pool that we just created, my_pool.
+Let's create my_first_fs from the pool that we just created, my_pool.
 
 `stratis filesystem create my_pool my_first_fs`{{execute}}
 
@@ -20,7 +20,7 @@ You should see the filesystem that you just created in the last step.
 
 You can rename filesystems with with the following command:
 
-`stratis filesystem rename my_first_fs my_fs`{{execute}}
+`stratis filesystem rename my_pool my_first_fs my_fs`{{execute}}
 
 A filesystem list command will now yield the filesystem with its new name:
 
